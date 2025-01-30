@@ -1,0 +1,263 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #FFA500;
+    --secondary-color: #fff;
+    --Third-color: #000000;
+    --Fourth-color: #2d97ef;
+    --fifth-color: #ee40e3;
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+    font-weight: 16px;
+    line-height: 1.5;
+    background: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*NAV BAR*/
+.navbar {
+    background: var(--secondary-color);
+    padding: 20px;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .main-menu Ul {
+    display: flex;
+}
+
+.navbar Ul Li a {
+    padding: 10px 20px;
+    display: block;
+    font-weight: 600;
+    transition: 0.5s;
+
+
+}
+
+.navbar ul li a:hover {
+    color: var(--primary-color);
+}
+
+.navbar ul li a i {
+    /* button image set */
+    margin-right: 10px;
+}
+
+.navbar ul li:last-child {
+    margin-left: 10px;
+
+}
+
+
+
+/*HERO*/
+
+.hero {
+    margin-bottom: 50px;
+}
+
+
+.hero .container {
+    background: url('../Images/IMG/designimg.jpeg') no-repeat;
+    background-size: contain;
+    background-position: right;
+    height: 500px;
+
+}
+
+.hero .hero-content {
+    width: 70%;
+}
+
+.hero .hero-text {
+    width: 70%;
+    margin: bottom 20px;
+    ;
+}
+
+
+/*VIDEO SECTION*/
+
+.video {
+    padding: 10px 0 40px;
+}
+
+.video-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.video-content a {
+    color: yellow;
+
+}
+
+.video-preview {
+    margin-bottom: 15px;
+}
+
+/* utility class container*/
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container-sm {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/*BUTTONS*/
+
+.btn {
+    display: inline-block;
+    padding: 13PX 20px;
+    background: var(--primary-color);
+    color: var(--Third-color);
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    border-radius: 14PX;
+    cursor: pointer;
+    transition: 0.6s;
+
+}
+
+.btn-secondary {
+    display: inline-block;
+    padding: 13PX 20px;
+    background: var(--Fourth-color);
+    color: var(--Third-color);
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    border-radius: 14PX;
+    cursor: pointer;
+    transition: 0.6s;
+
+}
+
+.btn:hover {
+    opacity: 0.9S;
+    background-color: var(--Third-color);
+    color: var(--primary-color);
+
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+/*TEXT CLASSES*/
+
+.text-xxl {
+    font-size: 3rem;
+    line-height: 1.2;
+    font-weight: 600;
+    margin: 40PX 0 20px;
+}
+
+.text-xl {
+    font-size: 2.2rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 40PX 0 20px;
+}
+
+.text-lg {
+    font-size: 1.8rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 30PX 0 20px;
+}
+
+.text-md {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 20PX 0 20px;
+}
+
+.text-sm {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 10PX 0 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/*BACKGROUND COLOR*/
+.bg-black {
+    background: var(--Third-color);
+    color: var(--secondary-color);
+}
+
+.bg-primary {
+    background: var(--Fourth-color);
+    color: var(--secondary-color);
+}
+
+.bg-light {
+    background: var(--Third-color);
+    color: var(--secondary-color);
+}
+
+.bg-dark {
+    background: var(--Fourth-color);
+    color: var(--secondary-color);
+}
